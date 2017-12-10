@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- TODO: Add the Google Analyst script later on.. -->
+    <meta charset="UTF-8">
+    <title>RASPBERRY PI controller</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load staticfiles %}
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&effect=emboss" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <input type="checkbox" id="s1" />
+    <label class="slider-v1" for="s1">
+        <a class="font-effect-emboss" id="text1">Switch 1</a>
+    </label>
+    <br>
+    <br>
+    <input type="checkbox" id="s2" />
+    <label class="slider-v1" for="s2">
+        <a class="font-effect-emboss" id="text2">Switch 2</a>
+    </label>
+
+    <figure class="dimmer">
+            <div class="wrapper">
+                <div class="knob">
+                    <div class="center"></div>
+                </div>
+            </div>
+            <canvas class="progress" width="300" height="300">  </canvas>
+    </figure>
+    <a class="font-effect-emboss" id="text3">RaspberryPi project - Karlis Vigulis</a>
+
+</body>
+    <link rel='stylesheet' type='text/css' href="{% static 'pi_websocket/index_style.css' %}">
+    <script src="{% static 'pi_websocket/knob.js' %}"></script>
+</html>
